@@ -23,7 +23,7 @@ public class EnviaNoticiaJBoss {
 
 		// fabrica de conexao jms
 		ConnectionFactory factory = (ConnectionFactory) ic
-				.lookup("jms/K19Factory");
+				.lookup("RemoteConnectionFactory");
 		
 		Topic topic = (Topic) ic.lookup("jms/topic/noticias");
 		

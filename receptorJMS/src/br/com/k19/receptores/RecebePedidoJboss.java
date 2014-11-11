@@ -26,7 +26,7 @@ public class RecebePedidoJboss {
 		InitialContext ic = new InitialContext(props);
 		
 		//fábrica de conexoes JMS
-		ConnectionFactory factory = (ConnectionFactory) ic.lookup("jms/K19Factory");
+		ConnectionFactory factory = (ConnectionFactory) ic.lookup("RemoteConnectionFactory");
 		
 		//fila
 		Queue queue = (Queue) ic.lookup("jms/queue/pedidos");

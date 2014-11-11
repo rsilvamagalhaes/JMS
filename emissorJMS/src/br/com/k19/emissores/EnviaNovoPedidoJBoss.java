@@ -23,7 +23,7 @@ public class EnviaNovoPedidoJBoss {
 		InitialContext ic = new InitialContext(props);
 		
 		//fabrica de conexao jms
-		ConnectionFactory factory = (ConnectionFactory) ic.lookup("jms/K19Factory");
+		ConnectionFactory factory = (ConnectionFactory) ic.lookup("RemoteConnectionFactory");
 		
 		//fila
 		Queue queue = (Queue) ic.lookup("jms/queue/pedidos");

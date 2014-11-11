@@ -25,7 +25,7 @@ public class AssinanteDeNoticiasJBoss {
 		InitialContext ic = new InitialContext(props);
 		
 		//fábrica de conexoes JMS
-		ConnectionFactory factory = (ConnectionFactory) ic.lookup("jms/K19Factory");
+		ConnectionFactory factory = (ConnectionFactory) ic.lookup("RemoteConnectionFactory");
 		
 		//topico
 		Topic topic = (Topic) ic.lookup("jms/topic/noticias");
