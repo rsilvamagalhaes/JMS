@@ -3,3 +3,5 @@ RemoteSystemsTempFiles/
 *.class
 .classpath
 	.project
+
+*/bin
